@@ -1,10 +1,10 @@
 <template>
-  <header class="bg-dark text-white py-3">
+  <header class=" fw-bold text-dark bg-light p-3 shadow-sm">
     <div class="container d-flex justify-content-between align-items-center">
       <!-- Logo -->
 <div class="col-lg-4 ">
-  <router-link to="/" class="fw-bold text-light nav-link" active-class="text-danger" exact>
-        <h3 class="fw-bold"> Portfolio</h3>
+  <router-link to="/" class="fw-bold nav-link"  exact>
+        <h3 class="fw-bold">Portfolio</h3>
       </router-link>
 </div>
       
@@ -19,24 +19,24 @@
       <nav class="col-lg-4 d-flex justify-content-end ">
         <ul class="d-flex align-items-end gap-4 list-unstyled mb-0 d-none d-lg-flex">
           <li>
-            <router-link to="/" class="text-white nav-link" active-class="text-danger" exact>
+            <router-link to="/" class="nav-link" active-class="text-active" exact>
               <p class="nav-link">Home</p>
             </router-link>
           </li>
           <li>
-            <router-link to="/About" class="text-white " active-class="text-danger">
+            <router-link to="/About" class="nav-link" active-class="text-active">
               <p class="nav-link">About</p>
             </router-link>
           </li>
           <li>
-            <router-link to="/Projects" class="text-white nav-link" active-class="text-danger">
+            <router-link to="/Projects" class="nav-link" active-class="text-active">
               <p class="nav-link">
                 Projects
               </p>
             </router-link>
           </li>
           <li>
-            <router-link to="/Contact" class="text-white nav-link" active-class="text-danger">
+            <router-link to="/Contact" class="nav-link" active-class="text-active">
               <p class="nav-link">Contact</p>
             </router-link>
           </li>
@@ -99,6 +99,9 @@ const showDrawer = () => {
 }
 
 .nav-link:hover {
-  color: rgb(82, 82, 254);
+  color: navy;
+}
+.text-active{
+  color: rgb(215, 36, 36);
 }
 </style>

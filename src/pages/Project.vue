@@ -1,6 +1,6 @@
-<template>
-    <div class="projects container py-5">
-      <h2 class="text-center mb-5 display-5">My Projects</h2>
+<template >
+    <div class="projects  container py-5">
+      <h2 class="text-center mb-5 text-primary">My Projects</h2>
       <a-row gutter="16">
         <a-col
           v-for="project in projects"
@@ -33,6 +33,7 @@
   
   <script setup>
   import { h } from 'vue'
+  import gproducts from '@/assets/gproducts.png'
   import vtravel from '@/assets/vtravel.jpg'
   const projects = [
     {
@@ -40,9 +41,17 @@
       title: 'Vietnam introduce App',
       description: 'Trang giới thiệu về văn hóa, lịch sử, vẻ đẹp của đất nước hình chữ S',
       image: vtravel,
-      demo: 'https://thuc-tap-nu.vercel.app/',
+      demo: 'https://vtravelw.netlify.app/',
       code: 'https://github.com/ThaiVanGithub/ThucTap',
-    }
+    },
+    {
+      id: 2,
+      title: 'GProducts selling App',
+      description: 'Trang mua bán các sản phẩm xanh bảo vệ môi trường, bảo vệ thiên nhiên',
+      image: gproducts,
+      demo: 'https://gproducts.netlify.app/',
+      code: 'https://github.com/ThaiVanGithub/gproducts',
+    },
   ]
   </script>
   
